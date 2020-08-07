@@ -415,9 +415,26 @@ ul {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
   padding: 0px;
 }
+.clients-item {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item .icon {
+  width: 44px;
+  height: 49px;
+  margin-bottom: 0;
+  fill: #afb1b8;
+}
+
 /* Г А Л Е Р ЕЯ */
 .gallery {
   font-weight: bold;

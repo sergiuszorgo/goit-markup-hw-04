@@ -345,6 +345,7 @@ ul {
   background-color: var(--primary-white-color);
   line-height: 1.19;
   text-align: center;
+  padding-bottom: 24px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--people-card-shadow);
 }
@@ -384,12 +385,41 @@ ul {
   margin: 0;
 }
 
-.soсial-link {
+.soсial-list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
   list-style: none;
-  padding: 16px 32px 24px;
 }
+
+.ul .social-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 0;
+  border-radius: 50%;
+}
+
+.social-link .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-link:hover .icon,
+.social-link:focus .icon {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 .clients .container {
   padding: 94px 0 94px;

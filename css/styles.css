@@ -410,14 +410,24 @@ ul {
 
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 .clients .container {
-  padding: 94px 0 94px;
+  padding: 94px 15px 94px;
 }
 
 .clients-list {
   display: flex;
   align-items: flex-start;
   padding: 0px;
+  list-style: none;
 }
+
+.clients-list-item {
+  align-items: flex-start;
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .clients-item {
   display: flex;
   width: 170px;
@@ -426,6 +436,14 @@ ul {
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus,
+.clients-item:hover .icon,
+.clients-item:focus .icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-item .icon {
@@ -458,10 +476,18 @@ ul {
 .foot .container {
   padding: 60px 0 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-.addres-list {
+.address {
+  margin-right: 70px;
+}
+
+.come-on {
+  margin-right: 94px;
+}
+
+.addres-items {
   list-style: none;
   padding-left: 0px;
 }
@@ -483,7 +509,7 @@ ul {
   color: var(--primary-white-color);
 }
 
-.address {
+.address-list {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
@@ -496,8 +522,24 @@ ul {
 
 .social {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
   list-style: none;
-  padding: 0px;
-  margin-top: 20px 0 0;
+}
+
+.social-items-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-items-link:hover,
+.social-items-link:focus {
+  background-color: var(--accent-color);
 }

@@ -12,6 +12,7 @@ html {
   --primary-text-color: #757575;
   --accent-color: #2196f3;
   --backgroun-color: #f5f4fa;
+  --icons-color: #afb1b8;
   --primary-white-color: #ffffff;
   --second-white-color: rgba(255, 255, 255, 0.6);
   --primary-title-color: #212121;
@@ -122,6 +123,8 @@ ul {
 }
 
 .addres-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -129,9 +132,26 @@ ul {
   color: var(--primary-text-color);
 }
 
-.addres-img {
-  vertical-align: middle;
+.phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: var(--icons-color);
 }
+
+.mail {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: var(--icons-color);
+}
+.contact-item:hover .addres-link,
+.contact-item:focus .addres-link,
+.contact-item:hover .icon,
+.contact-item:focus .icon {
+  fill: var(--accent-color);
+}
+
 /* КНОПКА */
 .btn {
   display: inline-block;
@@ -196,7 +216,7 @@ ul {
       rgba(47, 48, 58, 0.8) 0%,
       rgba(47, 48, 58, 0.8) 100%
     ),
-    url(../images/Header_img.png);
+    url(../images/Header_img.jpg);
   background-position: 50% 50%;
 }
 
@@ -265,6 +285,7 @@ ul {
 
 .portpholio {
   padding-top: 50px;
+  padding-bottom: 64px;
 }
 
 .portpholio-list {
@@ -397,7 +418,7 @@ ul {
 .social-link .icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--icons-color);
 }
 
 .social-link:hover,
@@ -434,7 +455,7 @@ ul {
   height: 90px;
   align-items: center;
   justify-content: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 
@@ -447,12 +468,41 @@ ul {
 }
 
 .clients-item .icon {
-  width: 44px;
+  /* width: 44px;
   height: 49px;
-  margin-bottom: 0;
-  fill: #afb1b8;
+  margin-bottom: 0; */
+  fill: var(--icons-color);
 }
 
+.logo1 {
+  width: 44px;
+  height: 50px;
+}
+
+.logo2 {
+  width: 40px;
+  height: 52px;
+}
+
+.logo3 {
+  width: 41px;
+  height: 43px;
+}
+
+.logo4 {
+  width: 80px;
+  height: 42px;
+}
+
+.logo5 {
+  width: 59px;
+  height: 47px;
+}
+
+.logo6 {
+  width: 88px;
+  height: 45px;
+}
 /* Г А Л Е Р ЕЯ */
 .gallery {
   font-weight: bold;

@@ -40,6 +40,7 @@ ul {
 .site-header {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 .container {
@@ -165,6 +166,10 @@ ul {
   border: 1px solid transparent;
   border-radius: 4px;
   color: var(--primary-title-color);
+}
+
+.filter {
+  padding-top: 90px;
 }
 
 .button-list {

@@ -587,6 +587,16 @@ ul {
   color: var(--second-white-color);
 }
 
+.come-on-item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary-white-color);
+}
+
 .social {
   display: flex;
   align-items: center;
